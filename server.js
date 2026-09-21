@@ -1,10 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const { fullAnalysis, sampleGrid } = require('./analyze');
 
 const app = express();
 app.use(cors());
+app.use(express.static(__dirname)); // serves index.html at "/" automatically
 
 function parseLatLonRadius(req, res) {
   const lat = parseFloat(req.query.lat);

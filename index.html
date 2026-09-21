@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIlJhaW4gQWxlcnQiLCAic2hvcnRfbmFtZSI6ICJSYWluQWxlcnQiLCAiZGVzY3JpcHRpb24iOiAi4LmA4Lij4LiU4Liy4Lij4LmM4Lid4LiZ4Liq4LmI4Lin4LiZ4LiV4Lix4LinIOC4muC4reC4geC4p+C5iOC4suC4neC4meC4geC4s+C4peC4seC4h+C4oeC4suC5hOC4q+C4oeC5geC4peC4sOC4oeC4suC4luC4tuC4h+C5gOC4oeC4t+C5iOC4reC5hOC4q+C4o+C5iCIsICJzdGFydF91cmwiOiAiLiIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMEExMjFGIiwgInRoZW1lX2NvbG9yIjogIiMwQTEyMUYiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFNQUFBQURBQ0FZQUFBQlMzR3dIQUFBS0lFbEVRVlI0bk8yZHZhN2RSQlNGMTBWSUNMcWtpSlNLUktLaGpFU0ZhSGtLbm8rblNJdHVoWlF5RFZKSUZZbmkwRjFLS01EQjEvRy85OTZ6OXA3MWRaREVuak5lMzU3eGVIek9IY2o0NnVuWGY3ZHVnL0RqNGZiK3JuVWJ4alJ0ak1JdWdMWlNoSjlZb1JkclJNc1FkaklGWHh3aFNnVDNreWo0NGdyZUlyZ2RYTUVYbG5pSllINVFCVjk0WWkzQ1o1WUhVL2lGTjlZWk03Rkp3UmN0c0JnTkxvOEFDcjlvaFVYMkxnbWc4SXZXWE0zZ2FRRVVmc0hDbFN5ZUVrRGhGMnljemVSaEFSUit3Y3FaYkI0U1FPRVg3QnpONkc0QkZINlJoU05aM1NXQXdpK3lzVGV6bXdJby9DSXJlN0pydWhWQ2lHeXNDcURxTDdLemxlRkZBUlIrVVlXMUxHc0tKTHBtVmdCVmYxR05wVXhyQkJCZDg0a0FxdjZpS25QWjFnZ2d1dWFSQUtyK29qclRqR3NFRUYzelVRQlZmOUVMNDZ4ckJCQmRJd0ZFMTN3R2FQb2orbVBJdkVZQTBUVVNRSFNOQkJCZEl3RkUxOXpwQmxqMGpFWUEwVFdmdDI1QWRaNi9mSFhwMzM5NDk4YW9KV0lPVFlHTXVCcjBvMGdNR3lUQVNmWUcvbXBRbzg3VEt4TGdBR3RoakE3Z3VDMWZmZi90b3ovNzg0L2ZGLy9kN2ZXOVY1TlNJZ0UyV0FwOTY0cjc5TWZ2SC8zM2syY3ZaditlWkZoSEFpd3dGM3kyMEM4eEo4T2FDRUMvTWtpQUVZeWhCL1lIZjQ2ak12UW1nZ1FBYi9DQmErRWZjMFNFbmlUb1hvQnArRm1DRDlpRmY4eFVoTjRsNkZhQTNvSS9SU0w4UzNjQ01BY2ZpQW4vbUQwaVZKYWdLd0hHNFdjTFBoQWYvakZqRVhxU29Bc0IyS3MrMERiOEExdWpRVVVKeW0rR1k2LzZUQXlCSDBSNDh1ekY1dk9EN0pUZURwMGwvQXpWZjh3NDlPTlJnYTJkRnBTZEFnM2hadzQrd0IrcVFZQ3hGSldtUXVVRXlGTDFBZjd3RDh6ZElGZVJvTlFVS0ZQNE03RTBKYXBBbVJHQU9meHpXeTJtVzVqbllMc0JuWTRFRlVhQkVxdEFUT0czZkRQc3pLNU9ULzc4NC9kSEswUTNTSURtTUlSL0svUno3WHI2elplYng1MFRZT3VCbFRkakNaNi9mTlc4NEZ3bDlSU29aZml2dkNoanZiMFppSmRoYU1mRC9kdlVFcVFWb0ZYNExiWk90OWppN01HVFp5L3djUDhXUVB1cDUxblNUNEdpT3A1eE84WGM2c3pjdXIzbitiOXdQNHN2S1VlQXlJZGMxc0gzWHZ2ZnU4M1praTkrK3dzQVIxRTRTam9Cb3NMdlZmR2pIbjVGaW5CN2ZaL215ZnVVVkEvQ1dvVC93N3MzNlM0cThHL2dJeDlnRFgwVS9RVmhWMGtqUUVUSFBuLzVpbUpaMVpLcEJCRlBjak5Ka0VhQUFhOVFWcWo2UzBTTkJobjdMSVVBM2xPZmFsVi9pVWdKc293QzlBSjRkK1JZcnNyaEh4aVBCdDdUb1F3UzBBc3c0QkhPckNzWEZuaEtrS2svcVFYd0RHalA0UitJa0lCOUZLQVZ3TFBqRlA3L2laZ09NVXRBSzhDQWRVZ1Yvay94a2lCREgxTStDZlphbFdrWi9yWHY4NStqeFZibk0vdUl0bDZLWVY5aG85NE1sem44VjRmOUZudDZocjMrbGwrSDh1SGRHK29wRUowQUhwMFZlUUgyL0lyTTFzc3dheS9DUkkwTUh0OEp4UGdDRGQwVXlLTlNSMVQvbys4SkhOa1VGNzN2ZjY5c1I5NEpacjMzb2hvQlBLdC94Rk5rci9ORTcvdjNtQW9Oc0kwQ2xLdEFWaDNrL1J5aHhmNmh1WDA5SGt1WTFpdERUS0VmUXlrQU94YkJ2L3FWSXRIYm5hZFUrRW9VZ0VnQTYycnRWZjNabHZVOEpmQWFCWmhXaFdnRXlJRDF4am1yS2hxNXdRMm9VLzJCb2dKa1drbXlESk9IQk5OalZnby9RQ0lBNnhMWmdIZjcyQ1VZc0dnbjJ6U0lRZ0JMc3R4TGVHSXR3WEE4bHRCYVVrNEFTeUxEYnoyMXNKWmcrQUtzYWpRWHdESmtIc2VLeEd0K2ZWV0MyK3Q3MDZrTDB6U291UURzUkU5OVBPNEhybER0cG5kS0dRRXNxMG5yZWYvdDliM3BFaWx3ZkJSWWF3TkQ1YmFpakFBRG1XNVd0MmhWZlpmT1c2bHZCNW9LMExyU3pzSFdKZ3NKam93Q1VkS3gzQWRRN1FZVjh3eWg5UHhlMGVwei9TV2F2ZzlnVlczWmpoUEJHUm1tVzZqUGhyNVNmMnNFU01vNHZFZGtlTGgvaTFzQ3dhT1FBUC9CVUkzT3NyZVMzM0QvOFQyR2pKL1RnMllDdEw3NWFjbDN2L3c4Ky85Ly9lR240Slp3MEZMSTVpTkFUNVZvS2ZqVFArOUZCSVp2akVqL0hDREwxR1VyL0dmL2JndFlsakF0U0MrQUJkNFNuUW0wbHdTVndtdUJCSERtU3BEWlI0SUtTQURSTlJMQUVZc0tybEhBRndrZ3VrWUNpSzZSQUtKckpJRG9HZ2tndWtZQ09HS3hwYUdYYlJHdGtBQ2lheVFBZkxjSFhLbmdIdFUveTk2cEtOSUxrR0Z2eTVrZ00wOTlLa25VWEFEbTRGcHlKTkRNNGJlRTRkbzNleCtBWVM5NE5FT3c5VUxNWS9ST01BR0RrQkZ2SjdVS2VxV3BpeFhOcDBCQ3RLU0VBRlkzd2hsdXFNOVM2YXRNTENraGdCQm5hU29BWThWbGJOTlZHS3MyUzV2S2pRQ1Znc3RHeGI0dEk0QmxKYWswQ25oVTJ0WlYyNUl5QW5pUldZTE1iWStpdVFDc1A3MVRxY3F4L3Z3VVF4ODNGNENaekZNaHBwQXhVMDRBNjlCbWxFQS9GYnNmQ2dIWVE4YmV2akhzWVdWckg0VUExbmdFTm9NRUh1RmlDNncxSlFYd1lpd0Jrd2pqOWxRTnFoYzBBbVNadTQ4RHhpREJ1QTNXNGUvaFhvSkdnRXhNSldnaHd2UzhUS0hLUk5NZnladmljVUc5cTg0MC9ONUJqRHFmVi9XM1BLWUZWQUlBZVcvazVrWUJqL0JZSDN2dGZObXV3UmxvM3dqemVEUEw4MjJ2dVh1T3M5VjZiVW9WUGNLd0h0TUtPZ0U4M2hXT2ZQOTQ3ZWI3U2h1aUs2ZkgrZGlxUDBBNEJRTDg1b3N0aCtHajRXL1pSbzgrdHo2dUZaUUNBSDVoWloyTHRxYlgvcVpmQnZWYXgyZWVsMGJqSFg1bWFBWHdyQmlTNEg4aUtqUnI5UWVJQlFCOGd5b0pmTVBQUHZVWm9CWmdqQ1N3SlNMOEdhQVh3THVDc0c1dzh5Snk0eHg3OVFjU0NBRDRWMnEyRFc1ZVJDeEpacG42REtRUVlFeVVCSlZFaU5vNGw3SFAwZ2dRVVZFK3ZIdFRialNZQmorcUg3TkEreUJzaWFnaE5ucVhweld0ZHFsbTY2ZDBBZ0N4bloxTmhCYnR6UnArSUtrQVFIeW5zNHZRcW4yWnd3OFVFQUNJN2Z6b3ZmbHJ0RzRMKzBhM1BhUVZBR2g3QVpadWtGdnQxMi81K2JPR0gwZ3VBTUJ4SWJaV2k4NjJ5K3U0VjJIb2N5dlNDd0J3WFJEdnBWT216OWU2TFJhVUVBRGd2akJucFdEK0hHeHRPMHNaQVlDYUY0aUZxbjJiNWtud0hxbzl4V1doYXZpQllpUEFtT3pyMHl4VTc4ZXlBZ0MxSzVjM3ZmUmRxU25RRkUySnp0RkwrQUhnRGdBcWp3SUEvellHRm5ycnA0ZmIrN3N1QkJqb3FiSWRwY2UrNlU0QW9MOHF0MFhQL2RHbEFBTTlYM2hBbngvb1hJQ0Izb0xRMitkZDQ2TUFnQ1NZVWkwWVBYekdJenpjM3Q4Qi82MENBWDBMTUZBeEpCVS9rd1VTWUlQTXdjbmM5aWcrRVFDUUJIT3d2SUN5UlpaMk1qQ0VINUFBaDJqNXl5MVRtTnFTalVVQkFFbXdsNzFiSzY2R01lbzh2VEFPUHlBQnpJamVhNlRBbjJOVEFFQVNXSEpWREFYZGptbjRBY0lmeWF1R0Fzek43SGJvT1ZPRXlNeFNwa3UvRHlERUZvc0NhQlFRVlZqTDh1b0lJQWxFZHJZeXJDbVE2SnBOQVRRS2lLenN5ZTZ1RVVBU2lHenN6ZXp1S1pBa0VGazRrdFZEOXdDU1FMQnpOS09IYjRJbGdXRGxURFpQclFKSkFzSEcyVXllWGdhVkJJS0ZLMW04OUJ4QUVvaldYTTNnNVFkaGtrQzB3aUo3cHVIVmV3UWlBc3VpYTdvVlFxT0I4TVk2WTI2QjFXZ2dMUEVxcnU0Vld5S0lLM2pQS3NLbUxCSkJIQ0ZxT2gwK1o1Y0lZbzNvKzhpbU42MlNRUUJ0RjAvb1ZtMGtSVzNZVmdyL0FXK2VHcGhwT3RXN0FBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFnTGtsRVFWUjRuTzNkUGM4Y3g1a3U0S1lnWUxIS3hFQUFJNHM0bXpna3NKSGcxSC9pK1BkNS80VFNCU01EREJVdEtFY0VGRkFaTi9RSmVFYWM5K1Y4ZFBkVWRkWHpQTmNWN2RxVzJGM2RWZmZkMVRQREZ3dFQrdTdsbi80MStoZ0FXdmowOFo4dlJoOERYM05SQmhId0FKOHBDR01ZOUFNSWU0QnRsSUwrREhBSEFoK2dMWVdnUFFQYWdNQUhPSlpDOERnRHVKUFFCNWlETXJDUFFkdEE2QVBNVFJsWXowRGRJZlFCWWxJR2JqTTRWd2grZ0J3VWdjc015aG1oRDVDYk12Q0ZnVmdFUDBBMWlrRHhBaUQ0QVdxclhBUktucmpnQitCY3hTSlE2b1FGUHdDM1ZDb0NKVTVVOEFPd1JZVWk4TTNvQStoTitBT3dWWVhzU050d0tsdzhBUHJMdWh1UTdxUUVQd0E5WkNzQ3FWNEJDSDhBZXNtV01TbmFUTGFMQXNEY011d0doTjhCRVA0QUhDMUQ5b1F1QUJrdUFBQXhSYytna0ZzWTBRY2RnRndpdmhJSXR3TWcvQUdZVGNSc0NsVUFJZzR3QURWRXk2Z1FXeGJSQmhXQTJpSzhFcGgrQjBENEF4Qk5oT3lhdWdCRUdFQUF1R1QyREp1MkFNdytjQUJ3ejh4Wk5tVUJtSG5BQUdDTFdUTnR1Z0l3NjBBQndGNHpadHRVQldER0FRS0FGbWJMdUdrS3dHd0RBd0N0elpSMVV4U0FtUVlFQUhxYUpmT0dGNEJaQmdJQWpqSkQ5ZzB0QURNTUFBQ01NRG9EaHhXQTBTY09BS09Oek1JaEJVRDRBOEJub3pMeDhBSWcvQUhncVJIWmVHZ0JFUDRBY05uUkdYbFlBUkQrQUhEYmtWbDVTQUVRL2dDd3psR1pPZngzQUFDQTQzVXZBSjcrQVdDYkk3S3phd0VRL2dDd1QrOE03VllBaEQ4QVBLWm5sdm9NQUFBVTFLVUFlUG9IZ0RaNlpXcnpBaUQ4QWFDdEh0bmF0QUFJZndEb28zWEcrZ3dBQUJUVXJBQjQrZ2VBdmxwbWJaTUNJUHdCNEJpdE10Y3JBQUFvNk9FQzRPa2ZBSTdWSW52dEFBQkFRUThWQUUvL0FEREdveG04dXdBSWZ3QVk2NUVzOWdvQUFBcmFWUUE4L1FQQUhQWm1zaDBBQUNob2N3SHc5QThBYzltVHpYWUFBS0NnVFFYQTB6OEF6R2xyUnRzQkFJQ0NWaGNBVC84QU1MY3RXVzBIQUFBS1dsVUFQUDBEUUF4ck05c09BQUFVcEFBQVFFRjNDNER0ZndDSVpVMTIyd0VBZ0lKdUZnQlAvd0FRMDcwTXR3TUFBQVVwQUFCUTBOVUNZUHNmQUdLN2xlVjJBQUNnSUFVQUFBcTZXQUJzL3dOQUR0Y3kzUTRBQUJTa0FBQkFRVjhWQU52L0FKRExwV3kzQXdBQUJTa0FBRkNRQWdBQUJUMHBBTjcvQTBCT3p6UGVEZ0FBRktRQUFFQkJDZ0FBRlBSSEFmRCtId0J5Tzg5Nk93QUFVSkFDQUFBRktRQUFVSkFDQUFBRmZiTXNQZ0FJQUZXY010OE9BQUFVcEFBQVFFRUtBQUFVcEFBQVFFRUtBQUFVcEFBQVFFRUtBQUFVOU1KdkFFQU9yMTYvT2VUUCtmRCszU0YvRHRDWEFnQ1RPeXJZVzFNVVlHNEtBRXdpYXRCdnBSakFIQlFBT0ZpVm9OOUtNWUJqS1FEUW1jRGZSeUdBdmhRQWFFalk5NlVVUURzS0FEeG9sdEEvS2h5cm5TOWtwUURBUmtjSFlOU2dNMDR3TndVQVZqZ2l6S29FbUxHRU9TZ0FjRVhQb0JKUVQ3VWM2KzkrK3ZPVC8vLzMzMzdkOU05Ly9QbHRzMk9CbVNrQWNLWkg2QXY3ZmU1ZGkrZEJ2OGJXTW5CT01TQWJCUUNXdHNFdjhQdjRQMy83djgzK1hZOFVnUk9GZ09nVUFNcHFGZm9DdjQrWGYvM3A1bi8vL1E4L052bHpXcFNCWlZFSWlFY0JvSndXd1MvMCs3Z1grdGUwS0FPdGlzQ3lLQVBFb0FCUWd0Q2YyOTdndjJTbU1xQUlNRE1GZ05RZURYNmgzMWZMNEwvazBUS2dDSkNaQWtCS2p3Uy8wTyt2ZC9CZjhrZ1pVQVRJU0FFZ0ZjRS90eEhCLzV3aUFKOHBBS1N3Ti9pRi9qRm1DUDVMOXBZQlJZQU1GQUJDRS94em16WDRuMU1FcUVnQklLUTl3Uy8wanhVbC9KL2JVd2I4c0JBUktRQ0VJdmpuRnpYNG4xTUV5RTRCSUFUQkgwT1c4RDgzb2dnb0FSeEJBV0JxZ2orT2pPRi83dWdpb0FUUW13TEF0TGFHditBZkkzdndQN2UxQ05nTllGWUtBTk1SL0hGVUMvOXpSeFlCSllBZUZBQ21JZmhqcVJ6KzU0NHFBa29BclNrQVRHRkwrQXYrOFlULzE3WVVBU1dBR1NnQURDWDQ0eEgrdC9VdUFrb0FyWHd6K2dDb1MvakhJL3p2MnhMcWU3NVo0QnJRaWgwQURpZjRZeEk4Mi9YY0RiQVR3S01VQUE2MU52d0YvMXlFLzJQV0ZnRWxnQ01wQUJ6Q1UzOWN3citOWHJzQlNnQjdLUUIwNTZrL0x1SGZYby9kQUNXQVBYd0lrSzZFZjF6Q3Y0KzF3YjVseDhDMVlnODdBSFFoK0dNVEtNZG92UnRnSjRBdDdBRFFuUENIZFhyc0JzQmFkZ0JvYWszNEMvNjVlZm9mWTAzSXJ5a01kZ0ZZeXc0QXpRai8rSVQvT0d2Q2ZVMUpjQTFaeXc0QUQ3UGxuNFBnbUVPcnp3WFlDZUNlYjBjZkFMRjU2b2UyVHNGK3J3aDgvOE9QRC8wVncrQVZBTHNKL3p3OC9jL24wVmNDcmluM0tBRHNJdnp6RUJUelVnTG9TUUZnTStFUHgybjE0VUI0em9jQVdVM3c1K01KTVphOVh4WDBnVUF1c1FQQUtzSWZ4ck1iUUVzS0FIY0ovNXc4L2NlMHB3UzQxbHlpQUhDVDhJZjUyQW1nQlFXQXE0Ui9YcDRJNDl0YUFseHpudk5EUUZ4MEwvd0YvN3pXRkxmdmRqd2QrdEdaK2F6NTBTQS9HTVExdmdYQVY0VC8zTmIrOVBJMTMvMzA1MFpIOHBTUUdldmVsdi9wK3ZoR0FDZDJBSGhDK00vajBhQS8yclVBVWd5TzhmdHZ2OW9KWUJNN0FQeEIrSTkxUk9EM2V2cmZRZ2oxdFdZbndDNEF5MklIZ1A5UCtCOHYyaE4rSzg4RFNpRm9hODFPd01kRkFjQU9BSXZ3UDhyb3dKL2g2WDhOaGFDTmV6c0IvL1AzL3pybVFKaVdIWURpaEg5ZkkwTC8yalY3K1IvLy90Qy85Nmp2bFovL09jckFmdmQyQWw2OWZtTitGMmNIb0REaDMwZnYwTjk3WFhwL0Q3eDNRVkFHOXJsMlhUNjkvV1ZaRnZPOE1nV2dLT0hmWG8vZ2IzVWRSdjBJVEk5U29BaHNwd1J3aVFKUWtQQnZwMlhvOXh6M21YNEZybVVwVUFiV3V6VHVwd0t3TE9aOVJUNER3Qk1XZ1hWYUJIL1ZzWDRlMm84VWd0TS9xd2pjZCs4ekFkUmpCNkNZVzhGVk5aRFdpaHo2TSswQTNOSWlvSlNCMjg3SCtId0hZRm1zQWRVb0FJVUkvMzBlRGY3Ull4c2wvSjk3dEF3b0F0Y3BBU3lMVndCbGpQNE9la1NQakpsRjlISG5BYjZuREhnOXNJK3ZCOVpoQjZBQUgvcmJabS93enpxT1VYY0FydG03TTZBSVBIVWF4K2M3QUNlejNzKzBvd0FrSi96WHl4YjhKOWtLd0lraThManZmL2p4YWdGWWx2bnZiUjZqQUNRbS9OZmJFLzRSeGk5citKL2JVd1NVZ0MrVWdMcDhCcUFvay9xenJNRmZ5U25NdHhRQm53LzQ0dmZmZmwzK2JmUkJNSVFkZ0tSODR2KzJyY0VmZGN3cTdBQmNzblZYb0hvUitQanpXMnRHUWQrTVBnRGFNNUZ2MnhMK0g5Ni9NMllCL2Y3YnI1dEMzUS9rM0Y0YmZJc29Kd1VnR1JQMXVsZXYzMndPZjJMYldnSVVnZXVzTGZrb0FJVlVEalJQL1hYWkRWalBmVitMendBa1l1di9hNVdmK0t1Ky83OW5TOEJYK216QXg1L2YvdkYvVzB0cXNBT1FoQW43dGJYaDc0bS9saTA3QWxWM0Ezd2VvQVlGSUFFVDhxa3Q3L29GZjExYlNrRFZJbkNOTlNjSEJTQzVhZ0hucVo4dDdBWmNaMzdrcHdBRVordi9DMC85N0tVRVhPWlZRRzQrQkJpWThQOU04Ri9tUTREN3JBMzViQjhRUFA4UTRIUFdtcHpzQUJDYThLYzF1d0ZVb1FBRXBaR3ZDMy92K3RsajdXY0RxcFFBcndKeVVnQUNFdjdyd3g4ZW9RUjhvUVRrb3dBUWp2RG5TRW9BV1NrQXdWUi8rcjhYL3JiODZXSE5LNEVLSmNBdVFDNEtRQ0NWdzMvTmovdGtId1BHVzFNQ3NoY0JKU0FQQllEcDJmSm5KbDRKa0lVQ0VFVFZwMy9oejR5cWx3QzdBRGtvQU1GbERqL2h6OHlVQUhNdk9nVWdnSXFOV3ZnVFFmVVNjRTNGTlNzaUJXQnlGYmYraFg4YnQzN2FsWFl5bElDOTk0cFhBYkY5Ty9vQTRKeFAraFBScVFUY0N2cnZmL2d4M2Q4ZlFHeDJBQ1pXN2VsZitCTmR4ZDhLc0FzUWx3SVFVTVVnckhqT3hGVHhLZC84akVrQm1GUzE1bHh0dDRQY2JwV0FqTHNBdDFSYnl5SlJBSUxKR0lZV0NLckpXQUl5cmszWktRQVRxaFNJM3Z2MzVac0E0MFQ1UE1BUjkwaWxOUzBTM3dJSUpGc1lDdisrVHVQNzNZTkJVL0dkZGl1Ly8vWnJxVzhHZkhqL1R0Z0hvZ0JNcHNya0VmNXRISEcvM0Fxd1RPSFZTN1VTY00ycjEyL002OGtvQUVGa21qakNmNy9aQ3VMellLc1FaSHRVS2dGMkFlSlFBQ1ppMGdqLzUxcmNFNS9lL3JKODk5T2ZHeHpOZlFyQmRmZEt3QWhIZjBiRUxzQmNGSUFBTWswWVgvZTdMMU1SUEE4OFplQjJDYkFMd05GOEMyQVNGU2FMOEwvdDFlczNxZStENzMvNGNib240QkdxLzBaQTVuczhHanNBazhzU2pDYjlaVDNINWZ6ZWVma2YvNzc3MzlNNmxPd0szSlpsSjhBdXdQeGVmUGZ5VC84YWZSRFZWWGd5cm5DT1c3UmNHTmVPMzh1Ly90VHN6MXlXdHNVZ1ErQnROZnJiRmFPLy8xOXgzcy9HRHNERXNrd1FpOEFYTFlKL2xqRjdIbEtQRklMVFAxdXBDRlQ0UElCZGdMa3BBSU5sbnh6Qy83Tkhybk9VY1dwUkNLb1ZnUW9sNEJyZkNCaFBBWmlVaVpIRDN1RHZjZjAvL3Z5MitXdUFXODdEYTJzWnFGWUVqbmJrMS8vc0Fzekx0d0FHeWo0cEtqLzk3LzFFLzRmMzcxS096ZSsvL2JvcnpDdDhjNkR5dHdLeXI0R3o4eUhBZ2E3ZC9Ca0NvSHI0YjNIMGVCeTVDM0RMMW5ETHZodHcxSWNDUi8wRlVablh1Nmk4QWhoRTg4MW45dUNmelNuVTFoWUJyd1Z5OGxtQWNid0NtRXlHaVZEeDZYOUwrSS9lNXAvdHJ3amUrbm9nNjdiNEVhOENSbDc3ckhNL01qc0FORlV0L0xjR1A5ZHQyUkhJdWh0UStWc0JITThPd0FDMi8zTllleDFIUC9GZk10c3V3TGt0T3dKWmR3TjZtUG1hV3hQSFVBQW1NbHRJYkZYcDZYOUwrTE5QMVJLUStWc0I1c05jRklDRFZXeTYyU2I5bW1zNDQxUC9jek0vRVo2czNRMklIb3pQdGQ3cWozQ3RLNjZOb3lrQWs1ZzlMTzZwTUhuWGZyYy8rcldjMGRvU2tLMElYQkw5SE0yUGVTZ0FQS3pDMW4rV3AvN25JandabmxUYkRXajFLaURTTmVaWUNzQ0JLandsWitTcGZ5NlZTa0ExMXNoaktRQVRpQndlMlovK0s0Ui94Q2ZFS2lYZzBWMkFXYTl0OURtVGhRSkFGeGttZUlYd1A1azFLRzVSQW02TGVFMDVsZ0p3a0l4Yld4blA2ZVRldVVWODM1L1JtczhGWkNnQjEyUTh0OHpyeW13VWdNRXloa2owYzFvVC9obEZmbUxNWGdLMjdnSkV1SlpaNTFFa0NnQzdaRzNwVmNQL0pFSndYSk85QkZ6ei9Md2lYME9PcFFBY0lHdFlYaEk1SUt1SC8wbmtBTWxjQXRic0FrUytkdWNxclpraktRQURSUTJVakpOVCtPZVJ1UVJjRS9XY3pLdXhGQUNhaVRxWmhmL1hvajlKWmkwQnQ4NHIralhqZUFwQVo5bWVsck9kenowVncvOGtlcUJVK3F0elA3MzlKZDNjekhZK00xSUFCcWtjTERQSi9rTkdqOHBjQXFMdUFqejM2ZTB2b3cvaEllYlpPQW9BVFVTY3hNSi9IU1ZnTHVmbkV6MzhHVXNCNkNqYkZsYW04OGwwTGtlSVhnSnVpVmdDbHVWeStHZTdyN09kejJ3VWdBR3lQVjA2bnhvaWw0QnNud2Y0bjcvLzEraERhTXFjRzBNQllKVk1UZHpXLzM1WlMwQ2tYWUI3MXlEVFhLVXZCWUNIUkF0TTRmODRKV0NjODdGM3YvSW9CYUFUTFp6TUlwZUFxS3FPdWJXMEh3WGdZQkZiZTVZSjZPbS9yYWlCRkhFWFlPdFlSNXl6NXVEeEZBQjJpelJoaFg4ZlNrQi90OGJZdmNzanZoMTlBRUJzcDRCNitkZWZCaDlKTGxITEZYSFlBZWdnNHZiYk5Sbk94ZFAvTWFJRjFzeTdBQzNHTXNQY1BjbDBMak5SQUE2VUtXd3luRXVHYzVoTnBoSXd5dFl4ekhRZlp6cVhDTHdDSURWUERzZkw4a3JnK3g5K1BMUWdSQ3RQeEdjSGdLc3loNmNuamY2aUJOb011d0M5eGlyekhPWnhDZ0NiUlFsUGk5OTRIMzkrRzZZSVhOTDdzd0N0eGlmS25HUXVDa0JqMTBMSEJKMkhhM0c4Mll2QTBic0FzNC9IU05mbXAwTGZuZ0xBUmRFblcvVGp6eXBpOExYY0JSaHgvdVlDMXlnQWJCTDk2VG42OFdjeFl4SG91UXR3eFBtNnQ5bkt0d0JJeHhOUEhGRytNYkQzR3dHemxSdzRwd0JRaGlla2VjMVNCSDcvN2RjbVcvNkNud2dVZ0lheVBIbEdQby9JeDg3VDRCeGRCcDY3dHdzd2MraS9ldjBtUlFIT2NoNnpVQUFPa09XR2pYd2VrWSs5cXVlQmVsUWhXTHNMTUdQZ2Yzai9Ma1VKem5JZXMxTUFnQkJHRllLVFQyOS9XVDRxa2lTaUFKQ0dKNFphcmoyQlAxb01Qdjc4ZHZtMzEvOTc4Yit6QlUwbUNnRHBXYkJyYWZYTGVnb2wyZmtkQUo3d1M0WVFtMS9TWXkwN0FLUmdjYnZ2UC8vNzc2ditkLy80eTk4NkgwbHNYZ09RaFFMUWlDZm5PVlVmLzdXaGYrMmZxVndHdkFZWTY5cjRLMkR0S0FDUXpKN1FYL1B2cWx3R0lDT2ZBWUJFV29iL2tmOXU0SGdLQUgrSXV0M3A5Y3ZuY0Q0aW9JLzZjMmFSN1FOMVVZK2JQaFFBN3FvVXBCR05DT1JLSlNBaWM1WTFGQUFJYkdRUUt3RVFtd0lBUWMwUXdETWNBN0NQQWtCb1ZkOXB6aFM4TXgzTGthcmVlK1NoQUpCUzVuZWdNd2J1ak1mVVN1WjdpZG9VZ0FZOENYQ1VtWU4yNW1NakYydHVHd3BBUjU0Y2FDbEN3RVk0UnVLd2h2YWxBTEFzaTBZTlZaanJuQ2dBM0tTQnp5SFNrM1drWTgzTTNPVWVCUUFBQ2xJQUNLdktUd0JIZktLT2VNeTNaUHRKWUZnV0JRQUFTbElBQUtBZ0JRQUFDbElBWUdLUjM2VkhQbmFvUUFFQWdJSVVBQUFvU0FFQWdJSVVBQUFvU0FFQWdJSVVBQUFvU0FFQWdJSVVBQUFvU0FHQWlmM2pMMzhiZlFpN1JUNTJxRUFCQUlDQ0ZBQUFLRWdCQUlDQ0ZBREMrdkQrM2NYLy9OWHJOd2NmU1Y4UjM2VkhQT1picnQxVDErNUJpRUFCQUlDQ0ZBQnV5dlkwSFZXa0orcEl4NXFadWNzOUNnRExzdGpLaENyTWRVNFVnSTQwY0ZxSzhHUWQ0UmlKd3hyYWx3TFFnRWJOVVdZTzJKbVBqVnlzdVcwb0FLU1UrY2xoeHFDZDhaaGF5WHd2VVpzQ1FHaFZud1JtQ3R5Wmp1VklWZTg5OGxBQUlLZ1pnbmVHWXdEMlVRQWdzSkVCTFB3aE5nV0F1N3dEbmR1SUlCYitjek5uV1VNQjRBOVIzMmxXK1VuZ1cvN3hsNzhkRXNwSC9UbXp5UFlUd0ZHUG16NFVBRWlrWnpoWENuNm80TnZSQndDMGRSN1UvL25mZjIvMjd3SnlVUUFhK2ZEKzNjWHR3bGV2MzloMkc2ajYrTzhwQTBML3MwcXZrR2FVN2ZYTGpCUUFVcmhXd1BoQ3NMY2hnTWpDWndCNHdnZnFJRFpQenF5bEFKQ2U4c0pXN2hrcVVBQkl3eE1PdmJuSHlFUUJBSUNDRklBRFpObE9qSHdla1krZFkwVytWeUlmKzdrczV6RTdCYUNoTE51RGtjOGo4ckV6dDhqM1Z1UmpQNWZsUEdhaEFGQ0dwd3J1Y1k5UWlRSkFPcDRTYU0wOVJVWUtBSnRFZjBLS2Z2ejBFLzNlaUg3OEhFOEI0S0xvVHp6Umo1OTVSTCtYb2g4Ly9TZ0FqZmtsdmZtNUZqem5ucGlIWHpJOGpnTEFabEVXU3dzR2o0cHlEMFdaazh4RkFlQ3FLSXZmSGhaTVRqTGZDNW5uTUk5VEFFak5Bc2hlN2gyeVV3QU9sT2xKSThPNVpEZ0hIcFBoSHNod0RpZVp6aVVDQmFDRFRFOE9HYzdsMWpsWWNPcTZkZTJ6My9mUlpEcVhtU2dBQUZDUUFzQnVrWjZlN1FKd0xzdlR2M3VYUnlnQUI0czRZU010aUxjb0FTeExudkMvSmVKNW1JUEhVd0E2aVRnQkFXWmpMZTFIQWVBaDBWcTdYWURhTWozOXUxOTVsQUxBS3RFV3gxdVVnSm95aGY4dG1jNkZ2aFNBQWJLRmpQTmhkdG11cWZPaEJRV2dvMnhOUE5QNVpEb1hIcFBwWHNoMExzdVM3M3htb3dEUVJNUUc3MVZBRGRtMi90MmJ0S0lBREdJU3owRUp5QzFiK0dka25vMmpBSFNXYlpISmRqNzNXSnppcW5idHNzM05iT2N6SXdXQVpxSXV1UGNXbXFqblZkbTlheFkxWE55THRLUUFEQlIxTWtkZFBHOVJBdkxJR3Y2M1JEMG44Mm9zQmVBQVVTZm5IcEVudEJJUVgrYndyM1QvUmI1T2tTZ0E3SkoxZ2lvQmNXVU8vMXV5bmhmOUtRQ0RaUXlVNk9la0JNU1RQZnd6M25NWnp5a2FCZUFnMFJlZ1N6S2UwOG1hRW1BQkcyL05kYWg4bjBhVThaeG1wUURRUllad1hMTVFaVGpQcU5hTWZZWXdjWS9SaXdJd2djZ1RQUHNQNlNnQmN4TCtzYy9QbkptREFuQ2d5Qk8yTWlWZ0xsWEN2eUxYN1ZnS0FBL0x2Z3V3TE90TFFKYnpuZEhhOGMwU0lsbWYvcG1IQWpDSjZNRlJZVUg2OFA2ZDNZQkIxZ1ovbGZzd012TmpIZ3JBd2FKUDNqMnlUWGk3QWNlcDl0Ui9VdkhleVhZTkkxQUFKaEo5MGxkNEZYQ3lkckhLZHQ1SFdqdDIyWUlqODlhLytUQVhCV0NBNkpPWXo3YVVBQXZmZWx2R3kxekt3WFVjUXdHZ3FVcTdBTXV5N2IyekluRGIxdURQR0JxWm4vNlpqd0l3bVF3QlVhMEVMTXUyeFZrUmVHcnJlR1FOd3V6aDc1NmZ6N2VqRDZDcUQrL2ZtUkRKbkJicHRkZjE5TC9Mc0xqdnNmWCtyenBPMmJtdTQ3ejQ3dVdmL2pYNklLcXEzUGd6bk44dGU4dWRjYm1zOHJoa09QZnM1eGVWQWpEWXRZbVJaVkpVbi9nQzd6UGpjRjJGT1pKOW5ZdktLNEJKdlhyOXh1UklZT3RyZ1pQei8zM1UrK0NSVjF4Uno1bXZlZFU1THpzQUU4amVqaXM4NGF6VllqR2NkY3d5bjFzdkZlWkc5dlV0TWdWZ0FwVVhnV1hKYzQ1YnRId3FHalYrR2M1aHBBcHpvc0k1UnVZVndBU3FmeU9nNHV1T3ZhOEdMdW45aE5YejNxeDIzVThxei9kbHFYdmRaNk1BVEM1TE9GWXZPZGVjWDl2VzR6UHJlR2U0bjN2S01qNnozbjk4NFllQUpwRmwwdDlTOFFlQ3RzajY2M1luMmM5dnJlcmI0aFhPTVFxZkFaaElsWVdoeW5tMkVMMFl1WjVQVmJuM3E1eG5kRjRCVE1RMmVaNVhIcTA4SDR2Wjd3L1g3cnJacjkwUjNCOXpzUU13bVNyTitkNWltT2xjZXhvZEtxN1RPcFh1OXlwcldBWUt3SVNxZkcrMjBxSTRRcXR5NERvOHB0cDlYbVg5eWtBQm1GQ2xCbDF0Y2FTV2F2ZDNwYlVyQTk4Q21GQ2xpWEx2WEVkdmNjTmUxY0wvbGtybkdva0NFRXpHUUxRNFVFM0dlejdqMnBTZEFqQ3BqQXZFTFg0amdFeHNoWDlSN1h3alVRQUNxaGlJRmMrWm1DcmVxeFhQT1FNRllHTFZub3A5SG9Eb0tyNzN0OXNSbHdMQVZOYVVBRVdBMmF5NUw0VWhzMUVBSmxkdEYyQloxaTJVV2MrZGVOYmNpMW5EMzlOL2JBcEFBQlVua2hKQUJKWEQvNWFLNXh5UkFoQmM1aEJVQXBoWjlmQTM5K0pUQUlLbytDcGdXWlFBNWlUOGJmMW5vQUF3UFNXQW1WUVBmL0x3ZHdFRVU3MTUrNlExSTduL3JFR1pLQUFCVlorQW5zQTRtbnZ1cytwclR6WmVBUkNPVndJY1NmaVRsUUlRVU5VUEJKNVRBamlDOFAvQzAzOCtYZ0VFWmtLdUQva3E0MEViN3F1bnJEVTUyUUVndExXTGo5MEExaEwrVkdFSElEak4vQXNMTjQ5dy8xeG1qY25MRGtCd1BnL3doZDBBOWhMK2x3bi8zQlNBNUtxRjNaWVNVRzFzK05xVys2QmE0SmtmK1NrQUNWUmJtTzc1OFA2ZDNRRHUyaEw4NXRoVHhpTUhud0ZJeEhiZDE3WUVmTlV4cXNZOWNaKzFwQVlGSUJrVDl6S0xQdTZCZGF3aGRYZ0ZVRWpsN2U0dEM1ZlBCK1N5OVhwV0RqbjNmUzBLUURLVkY2OTd0cjdMdFJqR3R6WDR6Wi9yakUwK1hnRWtaUnZ2dHEzaGJzeGljWDIzczJiVW93QWtaa0xmdCtjcDM5ak55YlhjejFwUmt3S1FtTCs3ZkQzaEVaZHI5eGpyUkYwS1FISW05M3A3My9rYnd6RmNyOGRaSDJwVEFBb3d5YmNSTEhOemZkcXdMcUFBRkdHeWIvZkl0d0NNWjF1dVJWdldBNVpGQVNqRkIzMzJlZlRyZ01aMkgrUGVqN1dBWlZFQXlqSHg5MnZ4dXdERytEWmozSjgxZ0JNRm9DQUx3T01FVlR2Rzhqam1QdWNVZ0lLOC8ydW41YThGVmhsM1l6YUdlYzl6Q2tCUkZvUDJldngwY1BUcllFem1ZTDV6aVFKUW1FV2hqOTUvaDhDczE2WHFlYy9PUE9jYUJhQTRpME5mSS81Q29WN1hMTk81VkdGK2M0c0NnRVhpSVA1MndYWGNiMjJZMTl5akFMQXNpOFZpQklYZ00vZFdlK1l6YXlnQS9NR2lNVmFWUXVBKzZzczhaaTBGZ0Njc0h2UElVZ2pjTThjeGY5bENBZUFyRnBHNXpWb00zQmRqbWJkc3BRQndrY1Vrcmw0RndUV2ZsL25LSGdvQVY2MEpFZ3NMakdPTzhvaHZSaDhBODFxemNNeTZIUTNaQ1g4ZXBRQndreElBOHhIK3RLQUFjSmNTQVBNUS9yU2lBTENLRWdEakNYOWE4aUZBTnJNSXdiSE1PWHF3QThCbWRnUGdPTUtmWGhRQWRsRUNvRC9oVDAvZmZQcjR6eGVqRDRLWWxBRG9SL2pUMDZlUC8zenhZbG1XeGVjQWVNVGFrTGRZd1gzbUUwZFFBR2pLRXdzOHhoemlLSjgrL3ZPRnp3RFFqRmNDc0ovdzUyaDJBR2pPRmlhc1o3NHdnaDBBdWxpN1VOa05vRHJoejBoMkFPaktBZ2RmTXk4WXpRNEEzZGtOZ0tlRVA3UDQ0emNBN0FMUTA1YUF0L0NSa1RuQUxFNi8vNk1BY0NoUFAxVGt2bWNtQ2dERGVCS2lDdmM2TTFJQUdNN2lTRmJ1YldaMktnQStCTWd3V3hZK0h4SWtDdUZQRkUvK0lpQzdBSXhpMFNRNjl6QVJuUDhGZ0FvQTA5ajZsRzhSWlFidVd5SlJBSmlhQlpVSTNLZEVwQUFRZ2dXV0dia3ZpZXhxQVZnV0pZQzU3UG53bndXWEh0eUxSSGNlL3N1aUFCQ0V4WmRSM0h0a29RQVFtc1dZbzdqWHlFWUJJQVdMTTcyNHQ4anFiZ0ZZRmlXQU9QYitRSkFGbTNQdUk3SjdIdjdMb2dDUWhBV2NQZHczVktFQWtONGpQeGxzVWEvQlBVSkZxd3ZBc2lnQnhHYVI1em4zQkZWZEN2OWxVUUJJN3RHL1JNakNINXZyRHdvQXhiWDQyd1NGUVF5dU5UeTF1UUFzaXhKQVRnSWlIOWNVTHJzVy9zdWlBRkJZaTlCWUZzRXhpdXNIOXlrQWNFZXJNRmtXZ2RLTGF3VGI3UzRBeTZJRVVFdkxrRGtSTnZ1NEZ2Q1lXK0cvTEFvQVhOVWpnRTRFMFZQR0d0cDd1QUFzaXhJQVBRUHFwRXBRR1V2bzcxNzRMNHNDQUpzZEVXRG5vb2FaY1lKeEZBQTR3TkZCZDgxUkFWanRmQ0dpWmdWZ1daUUFXR09XY014SzZNTjlhOEovV1pibDI5NEhBcFZjQ2lpbFlCOWhEMzJ0M2dGWUZyc0EwSUpDY0puQWg4ZXRmZnBmRmpzQWNMaHJRVmVsR0FoNm1NT21IWUJsc1FzQVI0dGFEQVE5SEd2TDAvK3kyQUdBNmEwTjBxT0tnbUNISERidkFDeUxYUUFBbU1uV3AvOWxXWlp2ZWh3SUFEQzNYUVZnVDlNQUFOcmJtOGwyQUFDZ29OMEZ3QzRBQUl6MVNCWS90QU9nQkFEQUdJOW1zRmNBQUZEUXd3WEFMZ0FBSEt0Rjl0b0JBSUNDbWhRQXV3QUFjSXhXbWR0c0IwQUpBSUMrV21hdFZ3QUFVRkRUQW1BWEFBRDZhSjJ4elhjQWxBQUFhS3RIdG5aNUJhQUVBRUFidlRMVlp3QUFvS0J1QmNBdUFBQThwbWVXZHQwQlVBSUFZSi9lR2RyOUZZQVNBQURiSEpHZFBnTUFBQVVkVWdEc0FnREFPa2RsNW1FN0FFb0FBTngyWkZZZStncEFDUUNBeTQ3T3lNTS9BNkFFQU1CVEk3Snh5SWNBbFFBQStHeFVKZzc3Rm9BU0FFQjFJN053Nk5jQWxRQUFxaHFkZ2NOL0IyRDBBQURBMFdiSXZ1RUZZRm5tR0FnQU9NSXNtVGRGQVZpV2VRWUVBSHFaS2V1bUtRRExNdGZBQUVCTHMyWGNWQVZnV2VZYklBQjQxSXpaTmwwQldKWTVCd29BOXBnMTA2WXNBTXN5NzRBQndGb3paOW0wQldCWjVoNDRBTGhsOWd5YnVnQXN5L3dEQ0FEUFJjaXU2US93M0hjdi8vU3YwY2NBQU5kRUNQNlQ2WGNBemtVYVdBQnFpWlpSb1FyQXNzUWJZQUR5aTVoTjRRNzRuRmNDQUl3VU1maFB3dTBBbklzODhBREVGajJEUWhlQVpZbC9BUUNJSjBQMmhEK0JjMTRKQU5CVGh1QS9DYjhEY0M3VGhRRmdMdGt5SnRYSm5MTWJBRUFMMllML0pPVkpuVk1FQU5namEvQ2ZwSG9GY0VuMkN3aEFleFd5SS8wSm5yTWJBTUF0RllML3BNeUpubE1FQURoWEtmaFB5cDN3T1VVQW9MYUt3WDlTOXNUUEtRSUF0VlFPL3BQeUEzQk9FUURJVGZCL1lTQ3VVQVlBY2hENmx4bVVPeFFCZ0pnRS8yMEdad05sQUdCdVFuODlBN1dUTWdBd0I2Ry9qMEZyUUJrQU9KYlFmNXdCN0VBaEFHaEw0TGRuUUErZ0VBQnNJL0Q3TThDREtBVUFud243TVF6NnBCUUVJQXNCUDZmL0IzYnc2eFZmSkpWSkFBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiNTEyeDUxMiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSJ9XX0=">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="theme-color" content="#0A121F">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rain Alert">
+<title>Rain Alert — เรดาร์ฝนส่วนตัว</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A121F;
+    --panel:#101C30;
+    --panel-2:#152238;
+    --line:#233350;
+    --text:#E7EEF7;
+    --text-dim:#8CA0BD;
+    --sweep:#3ED6C4;
+    --sweep-dim:rgba(62,214,196,0.18);
+    --green:#3DDC84;
+    --yellow:#F2C438;
+    --red:#F0483E;
+    --grey:#7C8CA6;
+    --raincolor:#4FA7F2;
+    --font-display:'Space Grotesk','Noto Sans Thai',system-ui,-apple-system,sans-serif;
+    --font-thai:'Noto Sans Thai',system-ui,-apple-system,sans-serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+  }
+  :root:not([data-theme="light"]){ /* dark is native identity of this app */ }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg:#EEF2F8; --panel:#FFFFFF; --panel-2:#F4F7FB; --line:#D7E0EC;
+      --text:#0F1B2D; --text-dim:#5A6B85; --sweep-dim:rgba(23,150,133,0.10);
+      --sweep:#178562;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#EEF2F8; --panel:#FFFFFF; --panel-2:#F4F7FB; --line:#D7E0EC;
+    --text:#0F1B2D; --text-dim:#5A6B85; --sweep-dim:rgba(23,150,133,0.10);
+    --sweep:#178562;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:var(--font-thai);
+    min-height:100vh;
+    padding-bottom:40px;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .wrap{max-width:480px;margin:0 auto;padding:0 14px;}
+
+  header{padding:14px 14px 2px;max-width:480px;margin:0 auto;}
+  .brand{display:flex;align-items:baseline;gap:8px;}
+  .brand h1{
+    font-family:var(--font-display);font-weight:700;font-size:19px;letter-spacing:0.2px;margin:0;
+  }
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--sweep);box-shadow:0 0 8px var(--sweep);flex-shrink:0;}
+  header p{margin:2px 0 0;color:var(--text-dim);font-size:12px;}
+
+  .status-bar{
+    display:flex;align-items:center;gap:9px;
+    background:var(--panel);border:1px solid var(--line);
+    border-radius:12px;padding:9px 12px;margin:10px 0 8px;
+  }
+  .status-emoji{font-size:21px;line-height:1;}
+  .status-text{flex:1;min-width:0;}
+  .status-title{font-weight:600;font-size:13.5px;}
+  .status-sub{font-size:11px;color:var(--text-dim);font-family:var(--font-mono);margin-top:1px;}
+
+  .alert-banner{
+    display:none;
+    background:linear-gradient(135deg,#3B0C0C,#5A1210);
+    border:1px solid #7A231D;
+    border-radius:12px;padding:10px 13px;margin-bottom:8px;
+    animation:pulseAlert 1.6s ease-in-out infinite;
+  }
+  .alert-banner.show{display:block;}
+  @keyframes pulseAlert{
+    0%,100%{box-shadow:0 0 0 0 rgba(240,72,62,0.35);}
+    50%{box-shadow:0 0 0 8px rgba(240,72,62,0);}
+  }
+  .alert-banner .a-title{font-weight:700;color:#FFD7D3;font-size:14px;}
+  .alert-banner .a-body{color:#FFC3BD;font-size:12px;margin-top:3px;font-family:var(--font-mono);}
+
+  .radar-card{
+    background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:11px;position:relative;
+  }
+  .radar-controls{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+  .radius-group{display:flex;gap:5px;background:var(--panel-2);padding:3px;border-radius:9px;}
+  .radius-btn{
+    border:none;background:transparent;color:var(--text-dim);font-family:var(--font-mono);
+    font-size:11px;padding:5px 8px;border-radius:6px;cursor:pointer;
+  }
+  .radius-btn.active{background:var(--sweep);color:#00201B;font-weight:600;}
+  .loc-pill{font-family:var(--font-mono);font-size:10px;color:var(--text-dim);
+    border:1px solid var(--line);padding:4px 8px;border-radius:100px;white-space:nowrap;}
+  .loc-pill.live{color:var(--sweep);border-color:var(--sweep-dim);}
+
+  #radarCanvas{width:100%;aspect-ratio:1/1;display:block;border-radius:12px;touch-action:none;}
+
+  /* history scrub, integrated directly under the radar lens */
+  .radar-scrub{margin-top:8px;}
+  input[type=range]{width:100%;margin:0;accent-color:var(--sweep);display:block;height:20px;}
+  .scrub-row{display:flex;justify-content:space-between;align-items:center;margin-top:2px;
+    font-family:var(--font-mono);font-size:10.5px;color:var(--text-dim);}
+  .play-btn{
+    border:none;background:transparent;color:var(--sweep);
+    font-family:var(--font-mono);font-size:10.5px;padding:2px 0;cursor:pointer;
+  }
+  .play-btn:disabled{opacity:.35;pointer-events:none;}
+  input[type=range]:disabled{opacity:.35;}
+  .hint{font-size:10.5px;color:var(--text-dim);text-align:center;margin-top:6px;}
+
+  .data-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+  .data-cell{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 11px;}
+  .data-label{font-size:10.5px;color:var(--text-dim);}
+  .data-value{font-family:var(--font-mono);font-size:17px;font-weight:600;margin-top:2px;}
+  .data-value small{font-family:var(--font-thai);font-size:11px;font-weight:400;color:var(--text-dim);}
+
+  .legend{display:flex;gap:12px;margin-top:9px;flex-wrap:wrap;font-size:10.5px;color:var(--text-dim);}
+  .legend span{display:inline-flex;align-items:center;gap:4px;}
+  .sw{width:8px;height:8px;border-radius:2px;display:inline-block;}
+
+  .notify-row{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 12px;margin-top:8px;}
+  .notify-row p{margin:0;font-size:11px;color:var(--text-dim);max-width:280px;}
+  .toggle-btn{
+    border:1px solid var(--sweep-dim);background:transparent;color:var(--sweep);
+    font-family:var(--font-mono);font-size:11px;padding:6px 10px;border-radius:8px;cursor:pointer;white-space:nowrap;
+  }
+  .toggle-btn.on{background:var(--sweep);color:#00201B;font-weight:600;}
+
+  footer{max-width:480px;margin:14px auto 0;padding:0 14px;color:var(--text-dim);font-size:10.5px;line-height:1.6;}
+  footer b{color:var(--text);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><span class="dot"></span><h1>Rain Alert</h1></div>
+    <p>เรดาร์ฝนที่ยึดตำแหน่งคุณเป็นศูนย์กลาง — บอกว่าฝนกำลังมาไหม และมาถึงเมื่อไหร่</p>
+  </header>
+
+  <div class="wrap" style="padding:0 16px;">
+    <div class="alert-banner" id="alertBanner">
+      <div class="a-title">🔴 ฝนกำลังมา!</div>
+      <div class="a-body" id="alertBody">คาดว่าจะถึงพื้นที่ของคุณในประมาณ — นาที</div>
+    </div>
+
+    <div class="status-bar">
+      <div class="status-emoji" id="statusEmoji">⚪</div>
+      <div class="status-text">
+        <div class="status-title" id="statusTitle">กำลังหาตำแหน่งของคุณ…</div>
+        <div class="status-sub" id="statusSub">GPS: —</div>
+      </div>
+    </div>
+
+    <div class="radar-card">
+      <div class="radar-controls">
+        <div class="radius-group" id="radiusGroup">
+          <button class="radius-btn" data-r="5">5กม.</button>
+          <button class="radius-btn active" data-r="10">10กม.</button>
+          <button class="radius-btn" data-r="20">20กม.</button>
+          <button class="radius-btn" data-r="30">30กม.</button>
+        </div>
+        <div class="loc-pill" id="locPill">กำลังขอตำแหน่ง…</div>
+      </div>
+      <canvas id="radarCanvas"></canvas>
+
+      <div class="radar-scrub">
+        <input type="range" id="scrub" min="0" max="30" step="5" value="0">
+        <div class="scrub-row">
+          <span id="scrubTime">ตอนนี้</span>
+          <span style="opacity:.7">ย้อนหลัง 30 นาที</span>
+          <button class="play-btn" id="playScrub">▶ เล่น</button>
+        </div>
+      </div>
+
+      <div class="hint" id="hintText">แตะบนจอเพื่อจำลองกลุ่มฝนที่ตำแหน่งนั้น (สำหรับทดสอบ)</div>
+
+      <div class="legend">
+        <span><i class="sw" style="background:#3DDC84"></i>ฝนเบา</span>
+        <span><i class="sw" style="background:#F2C438"></i>ฝนปานกลาง</span>
+        <span><i class="sw" style="background:#F0483E"></i>ฝนหนัก</span>
+      </div>
+    </div>
+
+    <div class="data-grid">
+      <div class="data-cell">
+        <div class="data-label">เวลาที่คาดว่าจะถึง (ETA)</div>
+        <div class="data-value" id="etaValue">— <small>นาที</small></div>
+      </div>
+      <div class="data-cell">
+        <div class="data-label">ทิศทางที่ฝนมา</div>
+        <div class="data-value" id="dirValue">—</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-label">ระยะห่าง (ขอบฝนถึงคุณ)</div>
+        <div class="data-value" id="distValue">— <small>กม.</small></div>
+      </div>
+      <div class="data-cell">
+        <div class="data-label">ความมั่นใจของการคำนวณ</div>
+        <div class="data-value" id="confValue">—</div>
+      </div>
+    </div>
+
+    <div class="notify-row">
+      <p>เปิดแจ้งเตือนของเบราว์เซอร์ เพื่อรับข้อความเด้งเมื่อฝนใกล้ถึง (ต้องเปิดหน้านี้ค้างไว้)</p>
+      <button class="toggle-btn" id="notifyBtn">เปิดแจ้งเตือน</button>
+    </div>
+  </div>
+
+  <footer>
+    <b>ติดตั้งเป็นแอป:</b> เปิดลิงก์นี้ในเบราว์เซอร์มือถือ แล้วเลือก "เพิ่มไปยังหน้าจอโฮม" (iOS) หรือ
+    "ติดตั้งแอป/เพิ่มไปยังหน้าจอหลัก" (Android) — จะได้ไอคอนเปิดแบบเต็มจอเหมือนแอปทั่วไป (ยังไม่รองรับ
+    การทำงาน<b>ออฟไลน์แบบเต็มรูปแบบ</b> เพราะข้อจำกัดของหน้าเว็บเดี่ยวที่ไม่มีไฟล์ service worker แยกต่างหาก)
+    <br><br>
+    <b>เกี่ยวกับต้นแบบนี้</b> — ตำแหน่งของคุณคือ GPS จริงจากมือถือเสมอ ส่วนข้อมูลฝนจะดึงจาก
+    <b>backend จริง</b> (RainViewer) เมื่อตั้งค่า <code>BACKEND_URL</code> ในโค้ดและเชื่อมต่อสำเร็จ —
+    ถ้ายังไม่ได้ตั้งค่า หรือเชื่อมต่อไม่สำเร็จ แอปจะสลับไปใช้<b>ข้อมูลจำลอง</b>โดยอัตโนมัติ (แตะบนจอ
+    เพื่อทดสอบสถานการณ์ฝนเข้าใกล้ได้ในโหมดนี้) การแจ้งเตือนแบบพื้นหลัง (แม้ปิดแอป) ยังต้องมี
+    Web Push หรือแอป native ต่างหาก — เป็นขั้นถัดไปหลังจากเชื่อม backend สำเร็จ
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- backend config ----------
+  // ตั้งค่าหลัง deploy backend แล้ว (ดู rain-backend/README.md) เช่น
+  // 'https://your-rain-backend.onrender.com' — เว้นว่างไว้ = ใช้โหมดจำลองอย่างเดียว
+  const BACKEND_URL = ''; // '' = same origin (this file is now served BY the backend itself)
+  const BACKEND_TIMEOUT_MS = 25000;
+  const BACKEND_POLL_MS = 150000; // ~2.5 นาที ตามรอบอัปเดตของ RainViewer
+
+  // ---------- state ----------
+  const state = {
+    radiusKm: 10,
+    userLoc: null,        // {lat, lon}
+    liveLocation: false,
+    gpsLabel: '',
+    cells: [],             // simulated fallback: {x,y (km east/north), vx,vy (km/h), r (km), intensity 0-1}
+    liveBackend: false,    // true once a real backend response has landed
+    gridPoints: [],        // real sample points from backend: {bearingDeg, distanceKm, intensity}
+    lastSummary: null,     // real status object from backend
+    scrubMinutes: 0,
+    playing: false,
+    notifyOn: false,
+    notifiedThisEvent: false,
+  };
+  const SPEEDUP = 55; // simulated minutes per real second-ish (tuned via dt below)
+  let lastT = null;
+
+  // ---------- geolocation ----------
+  const locPill = document.getElementById('locPill');
+  const statusSub = document.getElementById('statusSub');
+  const hintText = document.getElementById('hintText');
+
+  function fallbackLocation(){
+    state.userLoc = {lat:13.7563, lon:100.5018}; // Bangkok fallback
+    state.liveLocation = false;
+    locPill.textContent = 'ใช้ตำแหน่งจำลอง (กรุงเทพฯ)';
+    locPill.classList.remove('live');
+    state.gpsLabel = 'GPS: ไม่ได้รับอนุญาต — ใช้ตำแหน่งจำลอง';
+    updateStatusSub();
+    seedCells();
+    startBackendPolling();
+  }
+
+  if('geolocation' in navigator){
+    navigator.geolocation.getCurrentPosition(
+      pos=>{
+        state.userLoc = {lat:pos.coords.latitude, lon:pos.coords.longitude};
+        state.liveLocation = true;
+        locPill.textContent = 'ตำแหน่งสด (GPS)';
+        locPill.classList.add('live');
+        state.gpsLabel = 'GPS: ' + state.userLoc.lat.toFixed(4) + ', ' + state.userLoc.lon.toFixed(4);
+        updateStatusSub();
+        seedCells();
+        startBackendPolling();
+      },
+      err=>{ fallbackLocation(); },
+      {enableHighAccuracy:true, timeout:8000}
+    );
+  } else {
+    fallbackLocation();
+  }
+
+  function updateStatusSub(){
+    const src = state.liveBackend ? 'ข้อมูลฝน: จริง (RainViewer)' : 'ข้อมูลฝน: จำลอง (backend ไม่ตอบสนอง)';
+    statusSub.textContent = state.gpsLabel + ' · ' + src;
+  }
+
+  function setLiveMode(on){
+    state.liveBackend = on;
+    scrub.disabled = on;
+    document.getElementById('playScrub').disabled = on;
+    hintText.textContent = on
+      ? 'ข้อมูลฝนเป็นข้อมูลจริงจาก RainViewer — ปิดโหมดทดสอบชั่วคราว'
+      : 'แตะบนจอเพื่อจำลองกลุ่มฝนที่ตำแหน่งนั้น (สำหรับทดสอบ)';
+    updateStatusSub();
+  }
+
+  async function fetchWithTimeout(url, ms){
+    const ctrl = new AbortController();
+    const t = setTimeout(()=>ctrl.abort(), ms);
+    try{ return await fetch(url, {signal: ctrl.signal}); }
+    finally{ clearTimeout(t); }
+  }
+
+  async function pollBackend(){
+    if(!state.userLoc) return;
+    const params = `lat=${state.userLoc.lat}&lon=${state.userLoc.lon}&radiusKm=${state.radiusKm}`;
+    try{
+      const [sumRes, gridRes] = await Promise.all([
+        fetchWithTimeout(`${BACKEND_URL}/api/rain?${params}`, BACKEND_TIMEOUT_MS),
+        fetchWithTimeout(`${BACKEND_URL}/api/grid?${params}`, BACKEND_TIMEOUT_MS)
+      ]);
+      if(!sumRes.ok || !gridRes.ok) throw new Error('backend responded with an error');
+      state.lastSummary = await sumRes.json();
+      const grid = await gridRes.json();
+      state.gridPoints = grid.points || [];
+      setLiveMode(true);
+    } catch(err){
+      setLiveMode(false);
+    }
+  }
+
+  function mapBackendToA(s){
+    return {status:s.status, label:s.label, eta:s.etaMinutes, dir:s.direction, dist:s.distanceKm, conf:s.confidence, raining:s.status==='rain'};
+  }
+
+  function startBackendPolling(){
+    pollBackend();
+    setInterval(pollBackend, BACKEND_POLL_MS);
+  }
+
+
+  function rand(min,max){return min + Math.random()*(max-min);}
+
+  function spawnCellAtEdge(){
+    const ang = rand(0, Math.PI*2);
+    const dist = rand(30, 42);
+    const x = Math.sin(ang)*dist, y = Math.cos(ang)*dist;
+    // velocity: mostly wanders, some bias toward center for drama
+    const towardUser = Math.random() < 0.55;
+    let dir;
+    if(towardUser){
+      const bearingToUser = Math.atan2(-x,-y) + rand(-0.5,0.5);
+      dir = bearingToUser;
+    } else {
+      dir = rand(0, Math.PI*2);
+    }
+    const speed = rand(8, 30); // km/h
+    return {
+      id: Math.random().toString(36).slice(2),
+      x, y,
+      vx: Math.sin(dir)*speed, vy: Math.cos(dir)*speed,
+      r: rand(3, 8),
+      intensity: rand(0.3,1),
+      closingHist: []
+    };
+  }
+
+  function seedCells(){
+    state.cells = [];
+    const n = 3 + Math.floor(Math.random()*2);
+    for(let i=0;i<n;i++) state.cells.push(spawnCellAtEdge());
+  }
+  seedCells();
+
+  function addCellAt(x,y){
+    const bearingToUser = Math.atan2(-x,-y);
+    const speed = rand(15,26);
+    state.cells.push({
+      id: Math.random().toString(36).slice(2),
+      x, y,
+      vx: Math.sin(bearingToUser)*speed, vy: Math.cos(bearingToUser)*speed,
+      r: rand(4,7), intensity: rand(0.6,1),
+      closingHist: []
+    });
+  }
+
+  function stepSim(dtRealSec){
+    const dtHours = (dtRealSec * SPEEDUP) / 3600;
+    for(const c of state.cells){
+      c.x += c.vx*dtHours; c.y += c.vy*dtHours;
+      const dist = Math.hypot(c.x,c.y);
+      if(dist > 55){ Object.assign(c, spawnCellAtEdge()); c.id = c.id; }
+    }
+  }
+
+  // ---------- analysis ----------
+  function analyze(){
+    if(!state.userLoc) return {status:'grey', label:'ยังไม่ทราบตำแหน่ง', eta:null, dir:null, dist:null, conf:null, raining:false};
+
+    let raining = false;
+    let best = null; // {cell, eta, dist, closing}
+
+    for(const c of state.cells){
+      const dist = Math.hypot(c.x,c.y);
+      if(dist <= c.r) raining = true;
+      const edge = Math.max(dist - c.r, 0);
+      const speed = Math.hypot(c.vx,c.vy) || 0.0001;
+      const closing = dist>0.001 ? -( (c.x*c.vx + c.y*c.vy) / dist ) : speed;
+      c.closingHist.push(closing);
+      if(c.closingHist.length>12) c.closingHist.shift();
+
+      if(closing > 0.8){
+        const etaH = edge / closing;
+        if(!best || etaH < best.etaH){
+          best = {cell:c, etaH, edge, closing, bearing: Math.atan2(c.x,c.y)};
+        }
+      }
+    }
+
+    if(raining){
+      return {status:'rain', label:'ฝนกำลังตกอยู่', eta:0, dir:null, dist:0, conf:'สูง', raining:true};
+    }
+    if(!best){
+      return {status:'green', label:'ไม่มีฝนกำลังเข้าหา', eta:null, dir:null, dist:null, conf:null, raining:false};
+    }
+
+    const etaMin = best.etaH*60;
+    let status, label;
+    if(etaMin <= 30){ status='red'; label='ฝนกำลังมา'; }
+    else if(etaMin <= 90){ status='yellow'; label='ฝนกำลังเข้าใกล้'; }
+    else { status='green'; label='ไม่มีฝนกำลังเข้าหาในเร็วๆนี้'; }
+
+    // confidence from variance of recent closing-speed samples
+    const h = best.cell.closingHist;
+    let conf = 'กลาง';
+    if(h.length>=4){
+      const mean = h.reduce((a,b)=>a+b,0)/h.length;
+      const variance = h.reduce((a,b)=>a+(b-mean)*(b-mean),0)/h.length;
+      const sd = Math.sqrt(variance);
+      const rel = mean>0 ? sd/mean : 1;
+      conf = rel < 0.15 ? 'สูง' : (rel < 0.4 ? 'กลาง' : 'ต่ำ');
+    }
+
+    const dirs = ['เหนือ','ตะวันออกเฉียงเหนือ','ตะวันออก','ตะวันออกเฉียงใต้','ใต้','ตะวันตกเฉียงใต้','ตะวันตก','ตะวันตกเฉียงเหนือ'];
+    let deg = (best.bearing*180/Math.PI + 360) % 360;
+    const dirTxt = dirs[Math.round(deg/45)%8];
+
+    return {status, label, eta:etaMin, dir:dirTxt, dist:best.edge, conf, raining:false};
+  }
+
+  // ---------- UI: status/alert/data ----------
+  const emojiMap = {grey:'⚪', green:'🟢', yellow:'🟡', red:'🔴', rain:'🌧️'};
+  const colorMap = {grey:'var(--grey)', green:'var(--green)', yellow:'var(--yellow)', red:'var(--red)', rain:'var(--raincolor)'};
+
+  const statusEmoji = document.getElementById('statusEmoji');
+  const statusTitle = document.getElementById('statusTitle');
+  const alertBanner = document.getElementById('alertBanner');
+  const alertBody = document.getElementById('alertBody');
+  const etaValue = document.getElementById('etaValue');
+  const dirValue = document.getElementById('dirValue');
+  const distValue = document.getElementById('distValue');
+  const confValue = document.getElementById('confValue');
+
+  function renderAnalysis(a){
+    statusEmoji.textContent = emojiMap[a.status];
+    statusTitle.textContent = a.label;
+    statusTitle.style.color = colorMap[a.status];
+
+    if(a.status==='red'){
+      alertBanner.classList.add('show');
+      alertBody.textContent = 'คาดว่าจะถึงพื้นที่ของคุณในประมาณ ' + Math.max(1,Math.round(a.eta)) + ' นาที · มาจากทิศ' + (a.dir||'—') + ' · ความมั่นใจ: ' + a.conf;
+      if(state.notifyOn && !state.notifiedThisEvent && 'Notification' in window && Notification.permission==='granted'){
+        new Notification('🌧️ ฝนกำลังมา!', {body:'คาดว่าจะถึงในประมาณ '+Math.max(1,Math.round(a.eta))+' นาที จากทิศ'+(a.dir||'—')});
+        state.notifiedThisEvent = true;
+      }
+      if(navigator.vibrate) navigator.vibrate([120,60,120]);
+    } else {
+      alertBanner.classList.remove('show');
+      if(a.status!=='red') state.notifiedThisEvent = false;
+    }
+
+    etaValue.innerHTML = (a.eta==null ? '—' : Math.max(0,Math.round(a.eta))) + ' <small>นาที</small>';
+    dirValue.textContent = a.raining ? 'เหนือคุณ' : (a.dir || '—');
+    distValue.innerHTML = (a.dist==null ? '—' : a.dist.toFixed(1)) + ' <small>กม.</small>';
+    confValue.textContent = a.conf || '—';
+  }
+
+  // ---------- radius buttons ----------
+  document.getElementById('radiusGroup').addEventListener('click', e=>{
+    const btn = e.target.closest('.radius-btn');
+    if(!btn) return;
+    document.querySelectorAll('.radius-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    state.radiusKm = parseInt(btn.dataset.r,10);
+    pollBackend();
+  });
+
+  // ---------- notify toggle ----------
+  const notifyBtn = document.getElementById('notifyBtn');
+  notifyBtn.addEventListener('click', async ()=>{
+    if(!('Notification' in window)){
+      notifyBtn.textContent = 'เบราว์เซอร์นี้ไม่รองรับ';
+      return;
+    }
+    if(Notification.permission === 'granted'){
+      state.notifyOn = !state.notifyOn;
+      notifyBtn.classList.toggle('on', state.notifyOn);
+      notifyBtn.textContent = state.notifyOn ? 'แจ้งเตือนเปิดอยู่' : 'เปิดแจ้งเตือน';
+      return;
+    }
+    const perm = await Notification.requestPermission();
+    if(perm === 'granted'){
+      state.notifyOn = true;
+      notifyBtn.classList.add('on');
+      notifyBtn.textContent = 'แจ้งเตือนเปิดอยู่';
+    } else {
+      notifyBtn.textContent = 'ถูกปฏิเสธการแจ้งเตือน';
+    }
+  });
+
+  // ---------- scrubber ----------
+  const scrub = document.getElementById('scrub');
+  const scrubTime = document.getElementById('scrubTime');
+  scrub.addEventListener('input', ()=>{
+    state.scrubMinutes = parseInt(scrub.value,10);
+    scrubTime.textContent = state.scrubMinutes===0 ? 'ตอนนี้' : ('−'+state.scrubMinutes+' นาที');
+  });
+  let playTimer = null;
+  document.getElementById('playScrub').addEventListener('click', function(){
+    if(playTimer){ clearInterval(playTimer); playTimer=null; this.textContent='▶ เล่น'; return; }
+    this.textContent = '⏸ หยุด';
+    let v = 30;
+    scrub.value = v; state.scrubMinutes=v; scrubTime.textContent='−'+v+' นาที';
+    playTimer = setInterval(()=>{
+      v -= 5;
+      if(v < 0){ clearInterval(playTimer); playTimer=null; this.textContent='▶ เล่น'; v=0; }
+      scrub.value = v; state.scrubMinutes = v;
+      scrubTime.textContent = v===0 ? 'ตอนนี้' : ('−'+v+' นาที');
+    }, 450);
+  });
+
+  // ---------- canvas radar ----------
+  const canvas = document.getElementById('radarCanvas');
+  const ctx = canvas.getContext('2d');
+  let sweepAngle = 0;
+
+  function resizeCanvas(){
+    const cssSize = canvas.clientWidth;
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = cssSize*dpr; canvas.height = cssSize*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  window.addEventListener('resize', resizeCanvas);
+
+  function readVar(name){
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+
+  function intensityColor(v){
+    if(v < 0.4) return readVar('--green');
+    if(v < 0.7) return readVar('--yellow');
+    return readVar('--red');
+  }
+
+  function drawRadar(){
+    const size = canvas.clientWidth;
+    const cx = size/2, cy = size/2;
+    const R = size/2 - 10;
+    const scale = R/state.radiusKm;
+
+    ctx.clearRect(0,0,size,size);
+
+    // background panel-2 circle
+    ctx.fillStyle = readVar('--panel-2');
+    ctx.beginPath(); ctx.arc(cx,cy,R,0,Math.PI*2); ctx.fill();
+
+    // rings
+    ctx.strokeStyle = readVar('--line');
+    ctx.lineWidth = 1;
+    ctx.font = '10px ' + "'IBM Plex Mono',monospace";
+    ctx.fillStyle = readVar('--text-dim');
+    const ringCount = 4;
+    for(let i=1;i<=ringCount;i++){
+      const rr = R*i/ringCount;
+      ctx.beginPath(); ctx.arc(cx,cy,rr,0,Math.PI*2); ctx.stroke();
+      const label = Math.round(state.radiusKm*i/ringCount)+'กม.';
+      ctx.fillText(label, cx+4, cy-rr+11);
+    }
+    // crosshair
+    ctx.beginPath();
+    ctx.moveTo(cx-R,cy); ctx.lineTo(cx+R,cy);
+    ctx.moveTo(cx,cy-R); ctx.lineTo(cx,cy+R);
+    ctx.stroke();
+
+    // rotating sweep
+    ctx.save();
+    ctx.translate(cx,cy);
+    const grad = ctx.createConicGradient ? ctx.createConicGradient(sweepAngle - Math.PI/2, 0, 0) : null;
+    if(grad){
+      grad.addColorStop(0, readVar('--sweep-dim'));
+      grad.addColorStop(0.08, readVar('--sweep-dim'));
+      grad.addColorStop(0.09, 'transparent');
+      grad.addColorStop(1, 'transparent');
+      ctx.fillStyle = grad;
+      ctx.beginPath(); ctx.arc(0,0,R,0,Math.PI*2); ctx.fill();
+    }
+    ctx.restore();
+
+    // rain — either real sample points from the backend, or the simulated cells,
+    // offset by scrub minutes into the past (scrub only applies to the simulation)
+    if(state.liveBackend){
+      const cellKm = state.radiusKm/8;
+      for(const p of state.gridPoints){
+        if(p.intensity < 0.12) continue;
+        const rad = p.bearingDeg*Math.PI/180;
+        const px = Math.sin(rad)*p.distanceKm, py = Math.cos(rad)*p.distanceKm;
+        const sx = cx + px*scale, sy = cy - py*scale;
+        const srad = Math.max(3, cellKm*scale*0.75);
+
+        const col = intensityColor(p.intensity);
+        const rgb = hexToRgb(col);
+        const g2 = ctx.createRadialGradient(sx,sy,0,sx,sy,srad);
+        g2.addColorStop(0, `rgba(${rgb.r},${rgb.g},${rgb.b},0.6)`);
+        g2.addColorStop(1, `rgba(${rgb.r},${rgb.g},${rgb.b},0)`);
+        ctx.fillStyle = g2;
+        ctx.beginPath(); ctx.arc(sx,sy,srad,0,Math.PI*2); ctx.fill();
+      }
+    } else {
+      const backHours = state.scrubMinutes/60;
+      for(const c of state.cells){
+        const px = c.x - c.vx*backHours;
+        const py = c.y - c.vy*backHours;
+        const dist = Math.hypot(px,py);
+        if(dist > state.radiusKm*1.6) continue;
+
+        const sx = cx + px*scale, sy = cy - py*scale;
+        const rad = Math.max(3, c.r*scale);
+
+        const col = intensityColor(c.intensity);
+        const rgb = col.startsWith('#') ? hexToRgb(col) : {r:255,g:255,b:255};
+
+        const g2 = ctx.createRadialGradient(sx,sy,0,sx,sy,rad);
+        g2.addColorStop(0, `rgba(${rgb.r},${rgb.g},${rgb.b},0.55)`);
+        g2.addColorStop(1, `rgba(${rgb.r},${rgb.g},${rgb.b},0)`);
+        ctx.fillStyle = g2;
+        ctx.beginPath(); ctx.arc(sx,sy,rad,0,Math.PI*2); ctx.fill();
+
+        ctx.strokeStyle = col; ctx.globalAlpha = 0.8; ctx.lineWidth=1.4;
+        ctx.beginPath(); ctx.arc(sx,sy,rad,0,Math.PI*2); ctx.stroke();
+        ctx.globalAlpha = 1;
+
+        // direction arrow (only at present, not while scrubbing)
+        if(state.scrubMinutes===0){
+          const speed = Math.hypot(c.vx,c.vy);
+          if(speed>1){
+            const ang = Math.atan2(c.vx,c.vy);
+            const ax = sx + Math.sin(ang)*(rad+10), ay = sy - Math.cos(ang)*(rad+10);
+            drawArrow(sx + Math.sin(ang)*rad, sy - Math.cos(ang)*rad, ax, ay, col);
+          }
+        }
+      }
+    }
+
+    // user marker
+    ctx.fillStyle = readVar('--sweep');
+    ctx.beginPath(); ctx.arc(cx,cy,5,0,Math.PI*2); ctx.fill();
+    ctx.strokeStyle = readVar('--sweep'); ctx.globalAlpha=0.35; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.arc(cx,cy,9+Math.sin(Date.now()/280)*2,0,Math.PI*2); ctx.stroke();
+    ctx.globalAlpha=1;
+  }
+
+  function hexToRgb(hex){
+    const h = hex.replace('#','');
+    const n = parseInt(h.length===3 ? h.split('').map(c=>c+c).join('') : h, 16);
+    return {r:(n>>16)&255, g:(n>>8)&255, b:n&255};
+  }
+  function drawArrow(x1,y1,x2,y2,color){
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth=2;
+    ctx.beginPath(); ctx.moveTo(x1,y1); ctx.lineTo(x2,y2); ctx.stroke();
+    const ang = Math.atan2(y2-y1,x2-x1);
+    ctx.beginPath();
+    ctx.moveTo(x2,y2);
+    ctx.lineTo(x2-6*Math.cos(ang-0.4), y2-6*Math.sin(ang-0.4));
+    ctx.lineTo(x2-6*Math.cos(ang+0.4), y2-6*Math.sin(ang+0.4));
+    ctx.closePath(); ctx.fill();
+  }
+
+  // tap to add a test rain cell
+  function canvasToKm(clientX, clientY){
+    const rect = canvas.getBoundingClientRect();
+    const size = rect.width;
+    const cx = size/2, cy = size/2;
+    const R = size/2 - 10;
+    const scale = R/state.radiusKm;
+    const px = clientX - rect.left, py = clientY - rect.top;
+    return {x:(px-cx)/scale, y:-(py-cy)/scale};
+  }
+  canvas.addEventListener('click', e=>{
+    if(state.liveBackend) return; // real data active — no point injecting a fake cell
+    const {x,y} = canvasToKm(e.clientX, e.clientY);
+    if(Math.hypot(x,y) < 1) return;
+    addCellAt(x,y);
+  });
+
+  // ---------- main loop ----------
+  function loop(t){
+    if(lastT===null) lastT = t;
+    const dt = Math.min((t-lastT)/1000, 0.25);
+    lastT = t;
+    sweepAngle += dt*0.6;
+    if(!state.liveBackend && state.scrubMinutes===0) stepSim(dt);
+    drawRadar();
+    if(state.userLoc){
+      const a = (state.liveBackend && state.lastSummary) ? mapBackendToA(state.lastSummary) : analyze();
+      renderAnalysis(a);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  resizeCanvas();
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
